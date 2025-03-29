@@ -37,4 +37,20 @@ public class nextpermut {
             }
 
 }
+
+public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter the number of elements: ");
+    int n = scanner.nextInt();
+    int[] nums = new int[n];
+    System.out.print("Enter the elements: ");
+    for (int i = 0; i < n; i++) {
+        nums[i] = scanner.nextInt();
+    }
+    nextpt(nums);
+    System.out.println("Next permutation: " + Arrays.toString(nums));
+}
+}
+
+   
     
